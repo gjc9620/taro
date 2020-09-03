@@ -132,7 +132,9 @@ function parsePage (
       }
     })
   }
-  const propsKeys: string[] = []
+  const 
+  
+  : string[] = []
   const arg = pagePath.get('arguments')[0]
 
   const classBody: any[] = []
@@ -144,6 +146,7 @@ function parsePage (
 
   const wxsNames = new Set(wxses ? wxses.map(w => w.module) : [])
 
+  propsKeys
   const renderFunc = buildRender(
     componentType === 'App'
       ? t.memberExpression(
